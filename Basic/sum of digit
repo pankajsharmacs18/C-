@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n,temp;
+	int i=0;
+	int rev=0;
+	cout<< "Enter number ";
+	cin>> n;
+	temp=n;
+	while(n!=0)
+	{
+	rev=rev+n%10;
+	n=n/10;
+	}
+	cout<<"sum of digit of "<<temp<<" is "<< rev;
+}
+	
