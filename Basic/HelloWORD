@@ -1,0 +1,6 @@
+#include<iostream>
+using namespacesrd;
+int main()
+{
+cout << "Hello Pankaj Sharma:";
+}
