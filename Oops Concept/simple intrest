@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class Intrest
+{
+public:
+	int time; 
+	int prime;
+	int rate;
+	void simple(int t,int p,int r)
+	{
+	time=t;
+	rate=r;
+	prime=p;
+	float intrest=0;
+	intrest=(time*prime*rate)/100;
+	cout<<"simple intrest is : "<<intrest<<endl;
+	
+	}
+	
+};
+int main()
+{
+Intrest obj;
+int money,time,rate;
+cout<<"enter monet time and rate of intrest "<<endl;
+cin>>money>>time>>rate;
+obj.simple(money,time,rate);	
+}
