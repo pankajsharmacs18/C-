@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	char c;
+	long l;
+	
+	float f;
+	cout<<"size of foundamental datatype   : ";
+	cout<< "size od char "<<sizeof(c)<<"\n";
+	
+	cout<< "size of long : "<<sizeof(l)<<"\n";
+	cout<<"size of Integer  : "<< sizeof(a)<<"\n";
+	cout<<"Size of float "<<sizeof(f);
+	}
