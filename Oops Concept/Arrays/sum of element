@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+class ArraysImplement
+{ int i=0;
+	
+	public :
+		void insertElemwnt(int arr[],int size )
+		{
+			cout<<"Enter value in arrys  : "<<endl;
+			for(i=0;i<size;i++)
+			{
+			cin>>arr[i];
+			}	
+		}
+		void display(int arr[],int size)
+		{
+			for(i=0;i<size;i++)
+			cout<<arr[i]<<"  ";
+		}
+		void sum(int arr[],int size)
+		{
+			int sum=0;
+			for(i=0;i<size;i++)
+			{
+				 sum=sum+arr[i];
+			}
+			cout<<"\n sum of arrays is : "<<sum<<endl;
+		}
+};
+int main(){
+ArraysImplement obj;
+int size;
+cout<< "enter size of arrays  : "<<endl;
+cin >>size;
+int arr[size];
+obj.insertElemwnt(arr,size);
+obj.display(arr,size);
+obj.sum(arr,size);
+}
