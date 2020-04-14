@@ -1,0 +1,25 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+class Intrest
+{
+	public:
+		
+	int time;
+	int prime;
+	int rate;
+	void compund(int prime,int time,int rate)
+	{
+
+		float intrest= prime*( pow ( (1+ rate /100) , time));
+		cout<< "compund intrest is : "<<intrest;
+	}
+};
+int main()
+{
+	Intrest obj;
+	int time ,prime,rate;
+	cout<<"enter prime,time and rate of intrest  : "<<endl;
+	cin>> prime>>time>>rate;
+	obj.compund(prime,time,rate);
+}
