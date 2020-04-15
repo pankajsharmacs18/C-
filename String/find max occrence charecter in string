@@ -1,0 +1,44 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class StringImpl
+{
+	public: 
+void maxoccurence(string str)
+{
+	int count=0,max=0,maxIndex=0;;
+	int i=0;
+	while(str[i]!='\0')
+	{
+	count=0;	
+	int j=i;
+		while(str[j]!='\0')
+		{
+			if(str[i]==str[j])
+			{
+				count++;
+			}
+			j++;
+		}
+		if(count>max)
+		{ 
+			maxIndex=i;
+			max =count;
+		}
+		i++;
+	}
+	cout<<"maximum occurence charecter is  : "<<str[maxIndex]<< " at max "<<max<< endl;
+}
+	
+
+};
+int main()
+{
+StringImpl obj;
+string str;
+int length;
+cout<<"enter string :";
+getline(cin,str);
+cout<<"input string is : "<<str<<endl;
+obj.maxoccurence(str);
+}
