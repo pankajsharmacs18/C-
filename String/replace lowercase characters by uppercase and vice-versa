@@ -1,0 +1,40 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class StringImpl
+{
+	public: 
+string swaplatter(string str)
+{			
+int i=0;
+		while(str[i]!='\0')
+		{
+			if(str[i]>='A'&&str[i]<='Z')
+			{
+				str[i]=str[i]+32;
+			}
+			else if(str[i]>='a'&&str[i]<='z')
+			{
+				str[i]=str[i]-32;
+			}
+			else
+			{
+			str[i]=str[i];
+			}
+			i++;
+		}
+		return str;
+	
+}
+
+};
+int main()
+{
+StringImpl obj;
+string str;
+int length;
+cout<<"enter string :";
+getline(cin,str);
+cout<<"input string is : "<<str<<endl;
+cout<<"swapped string is : "<<obj.swaplatter(str);
+}
