@@ -1,0 +1,11 @@
+#include<iostream>
+#include<string> // or may write <cstring> both are same header file :
+using namespace std;
+int main()
+{
+
+string str;
+cout<<"enter string :";  
+getline(cin,str); // getline s used to take space separated string ;
+cout<<"input string is : "<<str<<endl;
+}
