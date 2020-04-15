@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class A //This is a Base class 
+{
+	public : 
+	void Afunc(void);//This is function declaration of class A
+};
+void A::Afunc(void)
+{
+	cout<<"this is body of function  fuc"<<endl;
+}
+class B: public A //This Derived class which inhertes a class A
+{
+	public : //acces modifier 
+	void Bfunc(void);//Funcion declaration ;
+};
+void B::Bfunc(void)
+{
+	cout <<"this is body od function Bfunc"<<endl;
+}
+int main()
+{
+	B obj;
+	obj.Bfunc();
+	obj.Afunc();
+}
