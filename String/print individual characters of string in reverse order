@@ -1,0 +1,38 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class StringImpl
+{
+	public: 
+	int length(string str)
+	{
+		int len=0,i=0;
+		while(str[i]!='\0')
+		{
+			len++;
+			i++;
+		}
+	return len;
+	}
+	void seprate(string str)
+	{
+		int i=length(str)-1;
+		while(str[i]!=0)
+		{
+			cout<<str[i]<<"   ";
+			i--;
+		}
+		
+	}
+};
+int main()
+{
+StringImpl obj;
+string str;
+int length;
+cout<<"enter string :";
+getline(cin,str);
+cout<<"input string is : "<<str<<endl;
+cout<<"length is "<<obj.length(str)<<endl;
+obj.seprate(str);
+}
