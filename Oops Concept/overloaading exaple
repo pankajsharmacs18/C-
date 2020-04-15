@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class Sum
+{
+	public :
+		int sum(int a,int b)
+		{
+		
+			return a+b;
+		}
+		int sum(int a,int b ,int c)
+		{
+			return a+b+c;
+		}
+};
+int main()
+{
+	int a,b,c;
+	Sum obj;
+	cout<< "eNTER TWO NUMBER : "<<endl;
+	cin>>a>>b;
+	cout<<"sum of two variable : "<<obj.sum(a,b)<<endl;
+	cout <<"enter one more "<<endl;
+	cin>>c;
+	cout<<"sum of three varible "<<obj.sum(a,b,c)<<endl;
+}
