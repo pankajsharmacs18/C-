@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+#define pankaj_Sharma main
+int pankaj_Sharma()
+{
+	int a,b;
+	int *c=&a,*d=&b;
+	cout<<"Enter value two nume "<<endl;
+	cin>>a>>b;
+	cout<<"Before swapping Adrress of A =  : "<<c<<" and b==  : "<<d<<endl;
+	cout<<"Value is   : "<<*c<<" b is "<<*d;;
+	*c=*c+*d;
+	*d=*c-*d;
+	*c=*c-*d;
+	cout<<"\n  After Adrress of A =  : "<<c<<" and b==  : "<<d<<endl;
+	cout<<"Value is   : "<<*c<<" b is "<<*d;;
+
+return 0;
+}
