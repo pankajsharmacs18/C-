@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"Enter value "<<endl;
+	cin>>a;
+	int *b=&a;
+	cout<<"Adrress is  : "<<b<<endl;
+	cout<<"Value is   : "<<*b;
+return 0;
+}
