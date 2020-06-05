@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int  range=0;
+cout<< " Enter range of series  : "<<endl;
+cin>> range;
+int n1,n2=1;
+int n3=0,i;
+cout<<n1 <<"  "<<n2;
+for(i=1;i<=range;i++)
+{
+n3=n2+n1;
+cout<<n3<<"  ";
+n1=n2;
+n2=n3;
+}
+
+}
