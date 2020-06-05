@@ -1,0 +1,62 @@
+#include<iostream>
+using namespace std;
+void display(int arr[],int size);
+void countFre(int arr[],int size);
+int main()
+{
+	int size=0;
+	cout<<"Enter size of arrays  :";
+	cin>>size;
+	int arr[size];
+	int i=0;
+	cout<<"Enter value in arrays  : ";
+	for(i=0;i<size;i++)
+	{
+		cin>>arr[i];
+	}
+	display(arr,size);
+	countFre(arr,size);
+	
+}
+void display(int arr[],int size)
+{
+	int i=0;
+	for(i=0;i<size;i++)
+	{
+		cout<<arr[i]<<"  ";
+	}
+}
+void countFre(int arr,int size)
+{
+	int count=0;
+	int fr[size],i,j;
+	int visited=-1;
+	for(i=0;i<size;i++)
+	{
+		count=1;
+		for(j=i+1;j<size;j++)
+		{
+			if(fr[i]!=-1)
+			{
+			
+			if(arr[i]==arr[j])
+				{
+					count++;
+					fr[j]=visited;
+				}
+					
+			}
+		
+		}
+	fr[i]=count;
+}
+
+cout<<"VALUE "<<"  Frequency : ";
+for(i=0;i<size;i++)
+{
+	if(fr[i]!=-1)
+	{
+		count<<arr[i]<<"  "<<fr[i]<<endl;
+	}
+}
+}
