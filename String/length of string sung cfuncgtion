@@ -1,0 +1,11 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+	 char str[20];
+	 cout<<"Enter name of student : ";
+	cin>>str;
+	cout<<"string is "<<str;
+	cout<<"String length is  :"<<strlen(str);
+}
