@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	string str;
+	cout<<"enter name of user : ";
+	getline(cin,str);
+  cout<<"Entered string is : "<< str<<endl;
+int i=0;
+int count=0;
+int len=str.size();
+while(i<=len/2)
+{
+	if(str[i]!=str[len-i-1])
+	{
+		count++;
+		break;
+	}
+	i++;
+}
+if(count==0)
+{
+	cout<<"  Plindrome  ";
+}
+else
+{
+	cout<" String is not palindrome :  ";
+}
+}
