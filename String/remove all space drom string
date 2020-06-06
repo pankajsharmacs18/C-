@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	string str;
+	cout<<"enter name of user : ";
+	getline(cin,str);
+  cout<<"Entered string is : "<< str;
+int i=0;
+int count=0;
+while(str[i])
+{
+	if(str[i]!=' ')
+	{
+		str[count++]=str[i];
+	}
+	i++;
+	}
+	str[count]='\0';
+
+cout<<str;
+}
