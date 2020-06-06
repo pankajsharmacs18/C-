@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class Pan
+{
+	public:
+	int roll;
+	string name;
+	void insert(int n,string m)
+	{
+		roll=n;
+		name=m;
+	}
+	void display()
+	{
+		cout<<"ROLL ----  name   "<<endl;
+		cout<<roll<<" - - "<<name;
+		
+	}
+	};
+int main()
+{
+	Pan obj;
+	string name;
+	int roll;
+	cout<<"Enter name ";
+	getline(cin,name);
+	cout<<"Enter roll number of studnt  ";
+	cin>>roll;
+	obj.insert(roll,name);
+	obj.display();
+}
