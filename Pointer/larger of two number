@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num1, num;
+	int *n,*m;
+	n=&num;
+	m=&num1;
+	cout<<"Enter two number : ";
+	cin>>num>>num1;
+	cout<<"First Number is  : "<<num<<" And Secounf Number is  : "<<num1<<endl;
+	int large=(*n>*m)?*n:*m;
+	cout<<" Larger Number is  "<< large;
+	
+}
