@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num1, num;
+	int *n,*m;
+	n=&num;
+	m=&num1;
+	cout<<"Enter two number : ";
+	cin>>num>>num1;
+	cout<<"First Number is  : "<<num<<" And Secounf Number is  : "<<num1<<endl;
+	cout<<"Address of first number is  : "<<n<<endl;
+	cout<<" Adress pf secound number is : "<<m;	
+}
