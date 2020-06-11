@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,j, row,col;
+	cout<<"Entered row and col of matrix : ";
+	cin>>row>>col;
+	int mtr[row][col];
+	cout<<"Enter "<<col*col<< " Element in matrix :"<<endl;
+	for(i=0;i<row;i++)
+	{
+		for(j=0;j<col;j++)
+		{a
+			cin>>mtr[i][j];
+		}
+	}
+	cout<<"Entered matrix is "<<endl;
+	for(i=0;i<row;i++)
+	{
+		for(j=0;j<col;j++)
+		{
+			cout<<mtr[i][j]<<" ";
+		}
+		cout<<"\n";
+	}
+}
