@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num;
+	cout<<"Enter a Number  : "<<endl;
+	cin>>num;
+	cout<<"Entered Number is  : "<<num<<endl;
+	int bin=0;
+	while(num>0)
+{
+	int carry=num%2;
+	bin=bin*10+carry;
+	num=num/2;
+	cout<<carry;
+}
+
+}
+
