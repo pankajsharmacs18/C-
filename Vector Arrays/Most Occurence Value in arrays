@@ -1,0 +1,47 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int mostOccr(vector<int> arr)
+{
+	int count=0;
+	int most;
+	int c=0;
+	for(int i =0;i<arr.size();i++)
+	{
+		count=0;
+		for(int j=i;j<arr.size();j++)
+		{
+			if(arr[i]==arr[j])
+			{
+				count++;
+			}
+		}
+		if(c<count)
+		{
+			c=count;
+			most=arr[i];
+		}
+	}
+	return most;
+}
+int main()
+{
+	vector <int> arr;
+	int  i=0,c=0;
+	do
+	{
+		cout<<"Enter Value to insert :";
+		cin>> i;
+		arr.push_back(i);
+		cout<< "Enter 1 for more value ";
+		cin>>c;
+	}
+	while(c==1);
+	cout<<"enter Arrays is ";
+	for(vector <int> :: iterator itr=arr.begin();itr!=arr.end();itr++)
+	{
+		cout<<*itr<<"  ";
+	}
+cout<<"Most occurence Element in arrays : ";
+cout<<mostOccr(arr);
+}
